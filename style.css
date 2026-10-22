@@ -278,10 +278,6 @@ section {
     max-width: 850px;
 }
 
-.hero .eyebrow {
-    color: #93c5fd;
-}
-
 .hero h1 {
     margin-bottom: 24px;
     font-size: clamp(2.5rem, 7vw, 5rem);
