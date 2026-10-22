@@ -1,60 +1,186 @@
-<!DOCTYPE HTML>
-<html lang="'id">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portofolio RAL</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
-    </head>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <header class="navbar">
-            <h1>Portofolio</h1>
-            <nav>
-                <a href="Beranda">Beranda</a>
-                <a href="Tentang">Tentang</a>
-                <a href="Kontak">Kontak</a>
-            </nav>
-        </header>
+    <meta
+        name="description"
+        content="Portofolio Reza Abdul Latif, mahasiswa Teknologi Informasi yang tertarik pada web development, data analysis, dan desain."
+    >
 
-        <main>
-            <section class="hero">
-                <h2>Tentang Kami</h2>
-                <p>Reza Abdul Latif (20) From Brawijaya University, I am someone who loves to learn new things and is open to various experiences. My educational background in Information Technology from Brawijaya University helps me understand many things, especially in Data Analysis, which things. I'm passionate about technology and design, and I love being able to apply what I learn to real-world situations. For me, work isn't just about routine; it's about growing and making a positive impact. In the future, I want to build a career in Data Analyst/Data Scientist, while continuing to learn and improve my skills. I also hope to work in an environment that supports collaboration and mutual growth.</p>
-            </section>
+    <title>Portofolio | Reza Abdul Latif</title>
 
-            <section class="about">
-                <h2>Full-Stack Developer</h2>
-                <p>Menggabungkan kemampuan Front-End dan Back-End untuk membangun situs web secara mandiri dari nol.</p>
-                <p>Kombinasi teknologi Front-End dan Back-End di atas.</p>
-            </section>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
 
-            <section class="cards">
-                <h2>INKLUSIF KAMPUS MAHASISWA TULI</h2>
-                <div class="card-container">
-                    <div class="card">
-                        <h3>Inklusif Kampus</h3>
-                        <p>perguruan tinggi yang tidak hanya menyediakan akses fisik, tetapi juga membangun ekosistem komunikasi, akademik, dan sosial yang setara</p>
+<body>
+    <header class="navbar">
+        <a href="#beranda" class="logo">Portofolio<span></span></a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#keahlian">Keahlian</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button
+                class="dark-toggle"
+                type="button"
+                aria-label="Aktifkan mode gelap"
+                aria-pressed="false"
+            >
+                <span class="theme-icon" aria-hidden="true">☾</span>
+                <span class="theme-label">Dark Mode</span>
+            </button>
+
+            <button
+                class="hamburger"
+                type="button"
+                aria-label="Buka menu"
+                aria-controls="navLinks"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="beranda">
+            <div class="hero-content">
+                <p class="eyebrow">HALO, SELAMAT DATANG</p>
+
+                <h1>
+                    Full-Stack <span>Developer</span>
+                </h1>
+
+                <p class="hero-description">
+                    Menggabungkan kemampuan Front-End dan Back-End
+                    untuk membangun aplikasi web yang fungsional,
+                    menarik, dan mudah digunakan.
+                </p>
+
+                <a href="#tentang" class="button-primary">
+                    Kenali Saya
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </section>
+
+        <section class="about section-padding" id="tentang">
+            <div class="section-heading">
+                <p class="eyebrow">TENTANG SAYA</p>
+                <h2>Mengenal Lebih Dekat</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-highlight">
+                    <span class="about-number">01</span>
+                    <h3>Belajar, Berkembang, Berdampak.</h3>
+                    <p>
+                        Teknologi bukan hanya tentang kode,
+                        tetapi juga tentang menciptakan solusi
+                        yang bermanfaat bagi banyak orang.
+                    </p>
                 </div>
 
-                <div class="card">
-                    <h3>Keahlian</h3>
-                    <p>Bahasa Isyarat (BISINDO):Penguasaan Bahasa Isyarat Indonesia untuk komunikasi akademik dan sosial sehari-hari di kampus.</p>
-                </div>
+                <div class="about-description">
+                    <p>
+                        Saya Reza Abdul Latif, mahasiswa Program Studi
+                        Teknologi Informasi di Universitas Brawijaya.
+                        Saya senang mempelajari hal baru dan terbuka
+                        terhadap berbagai pengalaman.
+                    </p>
 
-                <div class="card">
-                    <h3>Bahasa dan riset</h3>
-                    <p>Penerjemah Bahasa Isyarat (Tuli sebagai Deaf Interpreter)</p>
-                </div>
-            </section>
-        </main>
+                    <p>
+                        Saya memiliki ketertarikan pada teknologi,
+                        desain, pengembangan web, dan analisis data.
+                        Saya ingin menerapkan ilmu yang dipelajari
+                        untuk menyelesaikan masalah nyata.
+                    </p>
 
-        <footer class="footer">
-            <p>@Reza Abdul Latif</p>
-            <p>Rezaabdullatif50@gmail.com</p>
-            <p id="currentTime"></p>
-        </footer>
-    </body>    
+                    <p>
+                        Ke depannya, saya ingin mengembangkan karier
+                        di bidang Data Analyst atau Data Scientist,
+                        sambil terus meningkatkan kemampuan teknis,
+                        kreativitas, dan kolaborasi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section-padding" id="keahlian">
+            <div class="section-heading">
+                <p class="eyebrow">MINAT & KOMPETENSI</p>
+                <h2>Teknologi yang Berdampak</h2>
+                <p class="section-description">
+                    Mengembangkan kemampuan teknologi dengan
+                    memperhatikan aksesibilitas dan inklusivitas.
+                </p>
+            </div>
+
+            <div class="card-container">
+                <article class="card">
+                    <span class="card-number">01 / INKLUSIVITAS</span>
+                    <div class="card-icon" aria-hidden="true">♧</div>
+                    <h3>Inklusivitas Kampus</h3>
+                    <p>
+                        Mendukung lingkungan perguruan tinggi yang
+                        menyediakan akses komunikasi, akademik,
+                        dan sosial yang setara bagi mahasiswa
+                        penyandang disabilitas.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span class="card-number">02 / KOMUNIKASI</span>
+                    <div class="card-icon" aria-hidden="true">↔</div>
+                    <h3>Bahasa Isyarat</h3>
+                    <p>
+                        Mempelajari Bahasa Isyarat Indonesia (BISINDO)
+                        untuk mendukung komunikasi sehari-hari,
+                        interaksi sosial, dan kegiatan akademik.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span class="card-number">03 / RISET</span>
+                    <div class="card-icon" aria-hidden="true">⌘</div>
+                    <h3>Bahasa dan Riset</h3>
+                    <p>
+                        Tertarik mengeksplorasi bahasa, penelitian,
+                        dan peran Deaf Interpreter dalam mendukung
+                        komunikasi yang lebih inklusif.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="kontak">
+        <div class="footer-info">
+            <a href="#beranda" class="logo">RAL<span>.</span></a>
+            <p>Membangun teknologi yang inklusif dan bermakna.</p>
+        </div>
+
+        <div class="footer-contact">
+            <p class="footer-label">HUBUNGI SAYA</p>
+            <a href="mailto:Rezaabdullatif50@gmail.com">
+                Rezaabdullatif50@gmail.com
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Reza Abdul Latif.</p>
+            <p id="currentTime" aria-live="off"></p>
+        </div>
+    </footer>
+</body>
 </html>
